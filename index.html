@@ -71,13 +71,6 @@
             margin-bottom: 25px;
         }
         
-        .contact-info {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-left: 4px solid #000080;
-            margin-top: 20px;
-        }
-        
         .experience-item {
             margin-bottom: 20px;
             padding-left: 20px;
@@ -102,8 +95,30 @@
         }
         
         .publication {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             padding-left: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .publication-content {
+            flex: 1;
+        }
+        
+        .publication-image {
+            width: 120px;
+            height: 80px;
+            background-color: #f8f8f8;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #999;
+            flex-shrink: 0;
+            text-align: center;
+            border-radius: 4px;
         }
         
         .publication-title {
@@ -113,12 +128,6 @@
         .publication-venue {
             font-style: italic;
             color: #666;
-        }
-        
-        .skills-section {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 5px;
         }
         
         .footer {
@@ -134,6 +143,15 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+            }
+            
+            .publication {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .publication-image {
+                align-self: center;
             }
             
             body {
@@ -219,22 +237,20 @@
     <div class="section">
         <h2>Education</h2>
         <div class="experience-item">
-            <div class="position-title">Master of Science in Technology and Policy</div>
-            <div class="organization"><a href="https://www.mit.edu/">Massachusetts Institute of Technology</a></div>
+            <div class="position-title">Massachusetts Institute of Technology (MIT)</div>
             <div class="date-location">February 2025, GPA: 4.6/5.0</div>
             <p>
-                Conducted research on responsible computational text generation and AI content classification. 
+                M.S. in Technology and Policy. Conducted research on responsible computational text generation and AI content classification. 
                 Served as a Social and Ethical Responsibility of Computing (SERC) Scholar. Thesis focused on 
                 developing policy frameworks for AI-generated content.
             </p>
         </div>
         
         <div class="experience-item">
-            <div class="position-title">Bachelor of Arts in Philosophy</div>
-            <div class="organization"><a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a></div>
+            <div class="position-title">University of Illinois at Urbana-Champaign (UIUC)</div>
             <div class="date-location">December 2021, Major GPA: 3.95, Overall GPA: 3.85/4.0</div>
             <p>
-                Completed an Informatics minor with coursework in computational systems and data analysis. 
+                B.A. in Philosophy with Informatics minor. Completed coursework in computational systems and data analysis. 
                 Conducted undergraduate research in AI ethics and social computing applications.
             </p>
         </div>
@@ -243,34 +259,54 @@
     <div class="section">
         <h2>Selected Publications</h2>
         <div class="publication">
-            <div class="publication-title">
-                Jung, M., Panizo, C. Y. F., Dugan, L., Fung, M., Chen, P., & Liang, P. P. (2025). 
-                "Group-Adaptive Threshold Optimization for Robust AI-Generated Text Detection."
+            <div class="publication-image">
+                [NeurIPS Paper Image]
             </div>
-            <div class="publication-venue">Submitted to NeurIPS 2025.</div>
+            <div class="publication-content">
+                <div class="publication-title">
+                    Jung, M., Panizo, C. Y. F., Dugan, L., Fung, M., Chen, P., & Liang, P. P. (2025). 
+                    "Group-Adaptive Threshold Optimization for Robust AI-Generated Text Detection."
+                </div>
+                <div class="publication-venue">Submitted to NeurIPS 2025.</div>
+            </div>
         </div>
         
         <div class="publication">
-            <div class="publication-title">
-                Jung, M., Zhang, A. Lee, J., Fung, M., Liang, P. P. (2025). 
-                "Quantitative Insights into Language Model Usage and Trust in Academia: An Empirical Study."
+            <div class="publication-image">
+                [Language Model Study Image]
             </div>
-            <div class="publication-venue">Submitted to Conference on Language Modeling 2025.</div>
+            <div class="publication-content">
+                <div class="publication-title">
+                    Jung, M., Zhang, A. Lee, J., Fung, M., Liang, P. P. (2025). 
+                    "Quantitative Insights into Language Model Usage and Trust in Academia: An Empirical Study."
+                </div>
+                <div class="publication-venue">Submitted to Conference on Language Modeling 2025.</div>
+            </div>
         </div>
         
         <div class="publication">
-            <div class="publication-title">
-                Kim, Y., Jeong, H., Jung, M., et al. (2025). 
-                "Medical hallucinations in foundation models and their impact on healthcare."
+            <div class="publication-image">
+                [Medical AI Image]
             </div>
-            <div class="publication-venue">arXiv preprint.</div>
+            <div class="publication-content">
+                <div class="publication-title">
+                    Kim, Y., Jeong, H., Jung, M., et al. (2025). 
+                    "Medical hallucinations in foundation models and their impact on healthcare."
+                </div>
+                <div class="publication-venue">arXiv preprint.</div>
+            </div>
         </div>
         
         <div class="publication">
-            <div class="publication-title">
-                Jung, M. & Sanfilippo, M. (2022). "Mapping geographical bias of AI principles."
+            <div class="publication-image">
+                [AI Principles Map Image]
             </div>
-            <div class="publication-venue">iConference 2022.</div>
+            <div class="publication-content">
+                <div class="publication-title">
+                    Jung, M. & Sanfilippo, M. (2022). "Mapping geographical bias of AI principles."
+                </div>
+                <div class="publication-venue">iConference 2022.</div>
+            </div>
         </div>
     </div>
 
@@ -284,7 +320,7 @@
         </ul>
     </div>
 
-    <div class="skills-section">
+    <div class="section">
         <h2>Technical Skills</h2>
         <p>
             <strong>Programming:</strong> Python, R, Java, SQL, Cypher, HTML, CSS, JavaScript<br>
@@ -295,7 +331,7 @@
         </p>
     </div>
 
-    <div class="contact-info">
+    <div class="section">
         <h2>Contact Information</h2>
         <p>
             <strong>Email:</strong> msjung [at] mit [dot] edu<br>
