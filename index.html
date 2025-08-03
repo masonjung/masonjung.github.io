@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             background-color: #ffffff;
@@ -19,16 +19,18 @@
             color: #000080;
             border-bottom: 2px solid #000080;
             padding-bottom: 10px;
+            font-size: 28px;
         }
         
         h2 {
             color: #000080;
             margin-top: 30px;
+            font-size: 20px;
         }
         
         .profile-section {
             display: flex;
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 30px;
             align-items: flex-start;
         }
@@ -53,6 +55,7 @@
         .intro-text {
             font-size: 16px;
             margin-bottom: 20px;
+            text-align: justify;
         }
         
         a {
@@ -75,12 +78,47 @@
             margin-top: 20px;
         }
         
-        .awards {
-            margin-left: 20px;
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .position-title {
+            font-weight: bold;
+            color: #000080;
+        }
+        
+        .organization {
+            font-style: italic;
+        }
+        
+        .date-location {
+            color: #666;
+            font-size: 14px;
         }
         
         ul {
             margin-left: 20px;
+        }
+        
+        .publication {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .publication-title {
+            font-weight: bold;
+        }
+        
+        .publication-venue {
+            font-style: italic;
+            color: #666;
+        }
+        
+        .skills-section {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
         }
         
         .footer {
@@ -89,6 +127,18 @@
             border-top: 1px solid #ccc;
             font-size: 12px;
             color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            body {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -101,100 +151,163 @@
         </div>
         <div class="profile-content">
             <div class="intro-text">
-                <strong>Minseok (Mason) Jung</strong> is a PhD student in Informatics at <a href="https://www.indiana.edu/">Indiana University Bloomington</a>, 
-                specializing in Complex Systems and Network Science. His research focuses on using and developing advanced AI and data science 
-                techniques to understand innovation in science and technology. He is also interested in exploring how large language models 
-                can be enhanced and understood through the lens of collective intelligence.
+                <strong>Minseok (Mason) Jung</strong> is a full-stack data scientist and systems engineer with expertise in artificial intelligence, cloud infrastructure, and technology policy. He specializes in building production-scale AI systems, developing retrieval-augmented generation applications, and translating complex technical solutions into strategic business value.
             </div>
             
             <p>
-                Mason is currently a Systems Engineering Fellow at the <a href="https://appinventor.mit.edu/">App Inventor Foundation</a> 
-                and conducts research at <a href="https://csail.mit.edu/">MIT CSAIL</a>. Before joining the PhD program, he completed his 
-                undergraduate studies in Physics at <a href="https://www.postech.ac.kr/eng/">Pohang University of Science and Technology (POSTECH)</a>.
+                Mason holds an M.S. in Technology and Policy from <a href="https://www.mit.edu/">MIT</a>, where he conducted research at 
+                <a href="https://csail.mit.edu/">MIT CSAIL</a> and the MIT Media Lab. He completed his undergraduate studies in Philosophy 
+                with an Informatics minor at the <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>. His work 
+                bridges technical innovation with practical implementation, focusing on responsible AI development and deployment.
             </p>
         </div>
     </div>
 
     <div class="section">
-        <h2>Research Interests</h2>
+        <h2>Research and Technical Expertise</h2>
         <p>
-            Mason's research spans several interconnected areas in artificial intelligence and computational social science:
+            Mason's research spans artificial intelligence systems, natural language processing, and technology policy. His technical work includes:
         </p>
         <ul>
-            <li><strong>AI Systems</strong> - Development and analysis of artificial intelligence systems and their societal impact</li>
-            <li><strong>Information Technology Policy</strong> - Intersection of technology development and policy frameworks</li>
-            <li><strong>Natural Language Processing</strong> - Language models and their applications in social contexts</li>
-            <li><strong>Social Computing</strong> - Computational approaches to understanding social phenomena</li>
-            <li><strong>Complex Systems and Network Science</strong> - Mathematical modeling of complex social and technological systems</li>
-            <li><strong>Science of Science</strong> - Quantitative approaches to understanding scientific innovation and discovery</li>
+            <li><strong>Machine Learning Systems</strong> - Development of adaptive algorithms for AI text classification and optimization</li>
+            <li><strong>Cloud Infrastructure</strong> - Design and deployment of full-stack applications on AWS (EC2, Bedrock, S3, IAM)</li>
+            <li><strong>Data Engineering</strong> - Large-scale analysis of educational standards and policy documents</li>
+            <li><strong>Natural Language Processing</strong> - Language model usage studies and text generation systems</li>
+            <li><strong>Technology Policy</strong> - Research on AI ethics, bias, and responsible computing frameworks</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>Current Positions</h2>
-        <p>
-            <strong>PhD Student in Informatics</strong><br>
-            Indiana University Bloomington<br>
-            School of Informatics, Computing, and Engineering<br>
-            Focus: Complex Systems and Network Science
-        </p>
+        <h2>Current Position</h2>
+        <div class="experience-item">
+            <div class="position-title">Executive Assistant</div>
+            <div class="organization"><a href="https://www.lg.com/">LG Corp.</a></div>
+            <div class="date-location">June 2025 - Present, Boston, Massachusetts</div>
+            <p>
+                Coordinates executive operations for multiple senior leaders while implementing machine learning models 
+                to automate data-driven insights and executive reporting. Develops data visualizations and analytical 
+                tools to support strategic decision-making processes.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Recent Experience</h2>
+        <div class="experience-item">
+            <div class="position-title">Systems Engineer</div>
+            <div class="organization"><a href="https://appinventor.mit.edu/">App Inventor Foundation</a></div>
+            <div class="date-location">February 2025 - June 2025, Cambridge, Massachusetts</div>
+            <p>
+                Led development of a full-stack retrieval-augmented generation (RAG) system on AWS infrastructure, 
+                processing over 10,000 educational policy documents. Designed cybersecurity-integrated solutions 
+                for K-12 educational stakeholders and conducted analysis of educational standards across multiple dimensions.
+            </p>
+        </div>
         
-        <p>
-            <strong>Systems Engineering Fellow</strong><br>
-            <a href="https://appinventor.mit.edu/">App Inventor Foundation</a><br>
-            MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)
-        </p>
+        <div class="experience-item">
+            <div class="position-title">Research Assistant</div>
+            <div class="organization"><a href="https://csail.mit.edu/">MIT CSAIL</a>, Decentralized Information Group</div>
+            <div class="date-location">September 2022 - January 2025, Cambridge, Massachusetts</div>
+            <p>
+                Developed adaptive threshold optimization algorithms that improved AI text classifier performance by 12% 
+                while maintaining system reliability. Conducted empirical studies on language model usage and trust in 
+                academic settings. Led teaching responsibilities for courses in probability and econometrics.
+            </p>
+        </div>
     </div>
 
     <div class="section">
         <h2>Education</h2>
-        <p>
-            <strong>PhD in Informatics</strong> (In Progress)<br>
-            Indiana University Bloomington
-        </p>
+        <div class="experience-item">
+            <div class="position-title">Master of Science in Technology and Policy</div>
+            <div class="organization"><a href="https://www.mit.edu/">Massachusetts Institute of Technology</a></div>
+            <div class="date-location">February 2025, GPA: 4.6/5.0</div>
+            <p>
+                Conducted research on responsible computational text generation and AI content classification. 
+                Served as a Social and Ethical Responsibility of Computing (SERC) Scholar. Thesis focused on 
+                developing policy frameworks for AI-generated content.
+            </p>
+        </div>
         
-        <p>
-            <strong>Bachelor of Science in Physics</strong><br>
-            Pohang University of Science and Technology (POSTECH), South Korea
-        </p>
+        <div class="experience-item">
+            <div class="position-title">Bachelor of Arts in Philosophy</div>
+            <div class="organization"><a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a></div>
+            <div class="date-location">December 2021, Major GPA: 3.95, Overall GPA: 3.85/4.0</div>
+            <p>
+                Completed an Informatics minor with coursework in computational systems and data analysis. 
+                Conducted undergraduate research in AI ethics and social computing applications.
+            </p>
+        </div>
     </div>
 
     <div class="section">
-        <h2>Research Projects</h2>
-        <p>
-            Mason is currently conducting research on topic modeling to identify thematic trends and curricular variations 
-            in K-12 computer science education documents across the United States. His work involves developing computational 
-            methods to analyze educational content and policy documents.
-        </p>
+        <h2>Selected Publications</h2>
+        <div class="publication">
+            <div class="publication-title">
+                Jung, M., Panizo, C. Y. F., Dugan, L., Fung, M., Chen, P., & Liang, P. P. (2025). 
+                "Group-Adaptive Threshold Optimization for Robust AI-Generated Text Detection."
+            </div>
+            <div class="publication-venue">Submitted to NeurIPS 2025.</div>
+        </div>
         
-        <p>
-            His doctoral research focuses on understanding innovation patterns in science and technology through the application 
-            of advanced data science techniques and network analysis methods.
-        </p>
+        <div class="publication">
+            <div class="publication-title">
+                Jung, M., Zhang, A. Lee, J., Fung, M., Liang, P. P. (2025). 
+                "Quantitative Insights into Language Model Usage and Trust in Academia: An Empirical Study."
+            </div>
+            <div class="publication-venue">Submitted to Conference on Language Modeling 2025.</div>
+        </div>
+        
+        <div class="publication">
+            <div class="publication-title">
+                Kim, Y., Jeong, H., Jung, M., et al. (2025). 
+                "Medical hallucinations in foundation models and their impact on healthcare."
+            </div>
+            <div class="publication-venue">arXiv preprint.</div>
+        </div>
+        
+        <div class="publication">
+            <div class="publication-title">
+                Jung, M. & Sanfilippo, M. (2022). "Mapping geographical bias of AI principles."
+            </div>
+            <div class="publication-venue">iConference 2022.</div>
+        </div>
     </div>
 
     <div class="section">
-        <h2>Publications & Presentations</h2>
+        <h2>Honors and Recognition</h2>
+        <ul>
+            <li>Social and Ethical Responsibility of Computing (SERC) Scholar, MIT College of Computing, 2022-2023</li>
+            <li>Bernard Rabinowitz Fellowship, MIT Institute for Data, Systems, and Society, 2022-2024</li>
+            <li>First Place Award, MIT Policy Hackathon, 2021 (1st among 280 participants)</li>
+            <li>Writer Honorarium Award, KAIST Graduate School, 2021</li>
+        </ul>
+    </div>
+
+    <div class="skills-section">
+        <h2>Technical Skills</h2>
         <p>
-            <em>Publications and conference presentations will be listed here as they become available.</em>
+            <strong>Programming:</strong> Python, R, Java, SQL, Cypher, HTML, CSS, JavaScript<br>
+            <strong>Cloud Platforms:</strong> AWS (EC2, Bedrock, S3, IAM), Google Cloud Platform<br>
+            <strong>Data Science:</strong> Machine Learning, Statistical Analysis, Data Visualization<br>
+            <strong>Tools:</strong> Git, Linux, Tableau, PowerBI, Neo4j, Docker<br>
+            <strong>Specializations:</strong> Natural Language Processing, DevOps, Full-Stack Development
         </p>
     </div>
 
     <div class="contact-info">
         <h2>Contact Information</h2>
         <p>
-            <strong>Email:</strong> msjung [at] csail [dot] mit [dot] edu<br>
-            <strong>Personal Website:</strong> <a href="https://sites.google.com/mit.edu/msjung">https://sites.google.com/mit.edu/msjung</a><br>
+            <strong>Email:</strong> msjung [at] mit [dot] edu<br>
+            <strong>Phone:</strong> (857) 777-9015<br>
+            <strong>Academic Website:</strong> <a href="https://sites.google.com/mit.edu/msjung">https://sites.google.com/mit.edu/msjung</a><br>
             <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/minseok-jung/">linkedin.com/in/minseok-jung</a><br>
-            <strong>Location:</strong> Cambridge, Massachusetts / Bloomington, Indiana
+            <strong>Location:</strong> Boston, Massachusetts
         </p>
-    </div>
-
-    <div class="section">
-        <h2>Speaking & Interviews</h2>
+        
         <p>
-            For speaking engagements or interview requests related to AI systems, educational technology, or computational social science, 
-            please contact via email with details about the event, audience, and topic.
+            For collaboration opportunities, speaking engagements, or research discussions related to AI systems, 
+            data science, or technology policy, please contact via email with details about your project or event.
         </p>
     </div>
 
