@@ -94,6 +94,33 @@
             margin-left: 20px;
         }
         
+        /* Logo Container Styles */
+        .logo-container {
+            width: 60px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background-color: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
         .publication {
             margin-bottom: 20px;
             padding-left: 20px;
@@ -153,6 +180,16 @@
             .publication-image {
                 align-self: center;
             }
+
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .logo-container {
+                align-self: flex-start;
+            }
             
             body {
                 padding: 15px;
@@ -164,7 +201,6 @@
     <h1>Mason Jung | msjung [at] mit [dot] edu</h1>
     
     <div class="profile-section">
-
         <div class="profile-photo">
             <img src="images/picture.jpeg" alt="Mason Jung" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
         </div>
@@ -182,7 +218,6 @@
                 Mason holds a S.M. from <a href="https://csail.mit.edu/">MIT CSAIL</a>. He completed B.A. at the <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>. His work 
                 bridges technical innovation with practical implementation.
             </p>
-                
         </div>
     </div>
 
@@ -203,8 +238,10 @@
     <div class="section">
         <h2>Current Position</h2>
         <div class="experience-item">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                <img src="images/lgchem.png" alt="LG Chem America, Inc. Logo" style="height: 140px; width: auto;">
+            <div class="experience-header">
+                <div class="logo-container">
+                    <img src="images/lgchem.png" alt="LG Chem America, Inc. Logo">
+                </div>
                 <div>
                     <div class="position-title">Executive Assistant</div>
                     <div class="organization"><a href="https://www.lgchem.com/main/index?lang=en_US">LG Chem America, Inc.</a></div>
@@ -219,20 +256,17 @@
         </div>
     </div>
 
-
     <div class="section">
         <h2>Recent Experience</h2>
         <div class="experience-item">
-            
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                <img src="images/app_inventor.png" alt="App Inventor Logo" style="height: 50px; width: auto;">
+            <div class="experience-header">
+                <div class="logo-container">
+                    <img src="images/app_inventor.png" alt="App Inventor Logo">
+                </div>
                 <div>
                     <div class="position-title">Systems Engineer</div>
-                    <div class="organization"><a href="https://www.appinventorfoundation.org/">App Invenetor Foundation</a></div>
+                    <div class="organization"><a href="https://www.appinventorfoundation.org/">App Inventor Foundation</a></div>
                 </div>
-
-            <!-- <div class="position-title">Systems Engineer</div>
-            <div class="organization"><a href="https://appinventor.mit.edu/">App Inventor Foundation</a></div> -->
             </div>
             <div class="date-location">February 2025 - June 2025, Cambridge, Massachusetts</div>
             <p>
@@ -242,18 +276,15 @@
             </p>
         </div>
 
-
         <div class="experience-item">
-            
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                <img src="images/csail.png" alt="CSAIL Logo" style="height: 80px; width: auto;">
+            <div class="experience-header">
+                <div class="logo-container">
+                    <img src="images/csail.png" alt="CSAIL Logo">
+                </div>
                 <div>
                     <div class="position-title">Research Assistant</div>
                     <div class="organization"><a href="https://www.csail.mit.edu/">MIT Computer Science and Artificial Intelligence Lab</a></div>
                 </div>
-
-            <!-- <div class="position-title">Systems Engineer</div>
-            <div class="organization"><a href="https://appinventor.mit.edu/">App Inventor Foundation</a></div> -->
             </div>
             <div class="date-location">September 2022 - January 2025, Cambridge, Massachusetts</div>
             <p>
@@ -262,23 +293,19 @@
                 academic settings. Led teaching responsibilities for courses in probability and econometrics.
             </p>
         </div>
-
-        <!-- <div class="experience-item">
-            <div class="position-title">Research Assistant</div>
-            <div class="organization"><a href="https://csail.mit.edu/">MIT CSAIL</a>, Decentralized Information Group</div>
-            <div class="date-location">September 2022 - January 2025, Cambridge, Massachusetts</div>
-            <p>
-                Developed adaptive threshold optimization algorithms that improved AI text classifier performance by 12% 
-                while maintaining system reliability. Conducted empirical studies on language model usage and trust in 
-                academic settings. Led teaching responsibilities for courses in probability and econometrics.
-            </p>
-        </div> -->
     </div>
 
     <div class="section">
         <h2>Education</h2>
         <div class="experience-item">
-            <div class="position-title">Massachusetts Institute of Technology (MIT)</div>
+            <div class="experience-header">
+                <div class="logo-container">
+                    <img src="images/mit.png" alt="MIT Logo">
+                </div>
+                <div>
+                    <div class="position-title">Massachusetts Institute of Technology (MIT)</div>
+                </div>
+            </div>
             <div class="date-location">February 2025, GPA: 4.6/5.0</div>
             <p>
                 M.S. in Technology and Policy. Conducted research on responsible computational text generation and AI content classification. 
@@ -288,7 +315,14 @@
         </div>
         
         <div class="experience-item">
-            <div class="position-title">University of Illinois at Urbana-Champaign (UIUC)</div>
+            <div class="experience-header">
+                <div class="logo-container">
+                    <img src="images/uiuc.png" alt="UIUC Logo">
+                </div>
+                <div>
+                    <div class="position-title">University of Illinois at Urbana-Champaign (UIUC)</div>
+                </div>
+            </div>
             <div class="date-location">December 2021, Major GPA: 3.95, Overall GPA: 3.85/4.0</div>
             <p>
                 B.A. in Philosophy with Informatics minor. Completed coursework in computational systems and data analysis. 
@@ -391,4 +425,3 @@
         <p>Last updated: August 2025</p>
     </div>
 </body>
-</html>
